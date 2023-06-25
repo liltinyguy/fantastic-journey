@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Same Heart, Different Location</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">We're Closing</h1>
+    <p id="description">Our closing date is June 15, 2023. Please fill out the form below to ensure your prescription records are sent to your preferred CVS Pharmacy.</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your First and Last Name: <input id="name" name="name" type="text" required
+          <textarea id="name-label" name="name" placeholder="Enter your first and last name." /></textarea></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" required
+          <textarea placeholder="Please enter your email address." /></textarea></label>
+        <label for="number" id="number-label">Enter the RX Number of Your Recently Picked-Up Prescription: <input id="number" name="number" type="number" min="0500000" max="0599999" required <textarea rows="3" cols="30" placeholder="You can find the RX Number on the prescription label affixed to your pill bottle or online at CVS.com"/></textarea></label>
+      </fieldset>
+      <fieldset>
+        <label for="location">Which CVS location should we transfer your records to?
+          <select id="dropdown" name="location">
+            <option value="">(select one)</option>
+            <option value="1">333 N 48th ST. LINCOLN, NE, 68504</option>
+            <option value="2">2755 SOUTH 48TH ST. LINCOLN, NE, 68506</option>
+            <option value="3">7002 O ST. LINCOLN, NE,</option>
+            <option value="4">1550 SOUTH ST. LINCOLN, NE, 68502</option>
+            <option value="5">OTHER (CONTACT US TO TRANSFER YOUR RX)</option>
+          </select>
+        <label for="personal-account"><input id="personal-account" type="radio" value="1" name="account-type" class="inline" /> Personal Account</label>
+        <label for="caregiver-account"><input id="caregiver-account" type="radio" value="2" name="account-type" class="inline" /> Caregiver Account</label>
+     </fieldset>
+     <fieldset>
+       <label for="comments">Feel free to leave any questions or comments below:
+          <textarea id="bio" name="bio" rows="5" cols="30" placeholder="Feel free to express any questions or concerns you may have during this transitional time period"></textarea>
+        </label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" value="3" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.cvshealth.com/terms-of-use.html">terms and conditions.</a>
+        </label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" value="3" required name="terms-and-conditions" class="inline" /> I understand CVS Pharmacy <a href="https://www.cvs.com/content/patient-privacy">notice of privacy practices.</a>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
